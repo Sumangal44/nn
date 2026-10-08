@@ -1,3 +1,4 @@
+#XOR
 import numpy as np
 
 
@@ -14,6 +15,13 @@ def XOR(x):
     return step(np.dot([1, 1], [h1, h2]) - 1.5)
 
 
+input_data = np.array([
+        [0, 0],
+        [0, 1], 
+        [1, 0], 
+        [1, 1]
+        ])
+
 # Test XOR
-for x in [[0, 0], [0, 1], [1, 0], [1, 1]]:
+for x in input_data:
     print(f"XOR({x[0]}, {x[1]}) = {XOR(np.array(x))}")
